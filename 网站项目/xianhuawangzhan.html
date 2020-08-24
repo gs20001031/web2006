@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<style type="text/css">
+			#container {
+				width: 1300px;
+				height: 563px;
+				overflow: hidden;
+			}
+			#photo {
+				width: 5200px;
+				animation: switch 6s ease-out infinite;
+			}
+			#photo > img {
+				float: left;
+				width: 1300px;
+				height: 563px;
+			}
+			@keyframes switch {
+				0%, 25% {
+					margin-left: 0;
+				}
+				30%, 50% {
+					margin-left: -1300px;
+				}
+				60%, 75% {
+					margin-left: -2600px;
+				}
+				90%, 100% {
+					margin-left: -3900px;
+				}
+			}
+		</style>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css样式/logo.css"/>
+	<body>
+		<div class="header-box">
+			<div class="header">
+				<div class="header-nav">
+					<a class="header-logo" href="#">
+						<img src="图片/logo.png" >
+					</a>
+					<ul class="nav-box">
+						<li><a href="#">首页</a></li>
+						<li><a href="#">蛋糕</a></li>
+						<li><a href="#">面包</a></li>
+						<li><a href="#">冰激凌</a></li>
+						<li><a href="#">咖啡下午茶</a></li>
+						<li><a href="#">全国送</a></li>
+						<li><a href="#">企业专区</a></li>
+					</ul>
+					<div class="right-city-user">
+						<a class="header-app app-download" data-id="app-list" name="app_download">App下载</a>
+						<div class="current-city" data-id="current-city">
+							成都
+							<i>
+								<img src="图片/jiantousanjiaoxia%20(1).png" >
+							</i>
+						</div>
+						<a class="header-message" data-id="messageList" href="#">
+							消息
+						</a>
+						<span class="not-login">
+							<a href="#">登录</a>
+							/
+							<a href="#">注册</a>
+						</span>
+						<a href="#" class="header-cart" id="cart-count-icon">
+							<i>
+								<img src="图片/gouwuche%20(2).png">
+							</i>
+						</a>
+					  <ul class="current-city-list header-select" id="current-city" style="display: none;
+						height: 174px; padding-top: 12px; margin-top: 0px; padding-bottom: 12px; margin-bottom: 0px;">
+					  	<li>
+								<a href="#" class="city-id-1 user-behavior-tj-analysis" style="display: none;">上海</a>
+							</li>
+					  </ul>
+					</div>
+				</div>
+			</div>
+	  </div>
+	  <ul class="cart-sales cart-area" style="position: absolute; top:80px;left:50%;margin-left: -600px;z-index: 100000;">
+	          <li>
+	              <ul id="cart-events-box">
+	              </ul>
+	          </li>
+    </ul>
+			<div id="container" style="width: 1300px;height: 563px;">
+			        <div id="photo">
+			            <img src="./图片/001.jpg" />
+			            <img src="./图片/002.jpg" />
+			            <img src="./图片/003.jpeg" />
+									<img src="./图片/004.jpg" >
+			        </div>
+			 </div>
+		  <!-- 中间内容 -->
+		<div class="content-box" style="min-height: 213px;">
+				<div class="home-modulee home-menu">
+					<a href="#" name="menu_1"><img src="图片/s1.jpg" ></a>
+				  <a href="#" name="menu_1"><img src="图片/s2.jpg" ></a>
+				  <a href="#" name="menu_1"><img src="图片/s3.jpg" ></a>
+				  <a href="#" name="menu_1"><img src="图片/s4.jpg" ></a>
+				  <a href="#" name="menu_1"><img src="图片/s5.png" ></a>
+				</div>
+				<div class="home-module home-colorful anchor" id="1">
+					<h4 class="home-module-title">新品
+						<span>/</span>
+						<span>专区</span>
+					</h4>
+					<div class="colorful-top-banner">
+						<a href="#">
+							<img src="图片/s6.jpg" style="display: inline;">
+						</a>
+					</div>
+					<!-- 4张图片 -->
+				  <div class="color-product-list">
+				  	<div class="list-box">
+				  		<ul>
+				  			<li>
+									<a href="#">
+										<img class="lazy" src="图片/s7.png" style="display: block;">
+									</a>
+									<a href="#">
+										<h6>蔓生</h6>
+									</a>
+									<a href="#">
+										<p>树蔓奶油与浆果慕斯蛋糕</p>
+									</a>
+								  <div class="tag-list">
+								  	<a href="#">新品></a>
+								  </div> 
+								  <div class="cart-info">
+								  	<span class="spec">￥198.00/454g(1.0磅)</span>
+										<a href="#" class="add-cart">加入购物车</a>
+								  </div> 
+								</li>
+				  		  <li>
+									<a href="#">
+										<img class="lazy" src="图片/s8.png" style="display: block;">
+									</a>
+								  <a href="#">
+										<h6>豆酪</h6>
+									</a>
+								  <a href="#">
+										<p>专为儿童研发的豆腐芝士流心蛋糕</p>
+									</a> 
+								  <div class="tag-list">
+								  	<a href="#">儿童></a>
+										<a href="#">新品></a>
+								  </div>  
+								  <div class="cart-info">
+								  	<span class="spec">￥298.00/454g(1.0磅)</span>
+										<a href="#" class="add-cart">加入购物车</a>
+								  </div> 
+								</li>
+						    <li>
+									<a href="#">
+										<img src="图片/s9.png" style="display: block;">
+									</a>
+								  <a href="#">
+									  <h6>「新」杰瑞</h6>
+									</a>
+								  <a href="#">
+										<p>芝士与坚果的完美融合</p>
+									</a>
+								  <div class="tag-list">
+								  	<a href="#">儿童></a>
+										<a href="#">聚会></a>
+										<a href="#">新品></a>
+								  </div>
+								  <div class="cart-info">
+								  	<span class="spec">¥198.00/454g(1.0磅)</span>
+										<a href="#" class="add-cart">加入购物车</a>
+								  </div> 
+								</li>	
+							  <li>
+									<a href="#" style="display: block;">
+										<img src="图片/s10.png" >
+									</a>
+								  <a href="#">
+										<h6>松仁淡奶（木糖醇）</h6>
+									</a>
+								  <a href="#">
+										<p>轻松吃的木糖醇松子蛋糕</p>
+									</a>
+								  <div class="tag-list">
+								  	<a href="#">长辈></a>
+										<a href="#">新品></a>
+								  </div>
+								  <div class="cart-info">
+								  	<span class="spec">¥198.00/454g(1.0磅)</span>
+										<a href="#" class="add-cart">加入购物车</a>
+								  </div> 
+								</li>
+							</ul>
+				  	</div>
+				  </div>
+				</div>
+			  <div class="home-module home-colorful anchor" id="2">
+			  	<h4 class="home-module-title">生日
+					 <span>/</span>
+					 <span>专区</span>
+			    </h4>
+				  <div class="colorful-top-banner anchor" id="3">
+				  	<a href="#">
+							<img src="图片/s7.jpg" style="display: inline;">
+						</a>
+				  </div>
+				<div class="color-product-list">	 
+				  <div class="list-box">
+				  	<ul>
+				  		<li>
+								<a href="#">
+									<img src="图片/s11.png" style="display: block;">
+								</a>
+							  <a href="#">
+									<h6>深爱</h6>
+								</a>
+							  <a href="#">
+									<p>你深爱过么</p>
+								</a>
+							  <div class="tag-list">
+							  	<a href="#">情侣></a>
+									<a href="#">含酒></a>
+									<a href="#">人气></a>
+							  </div>
+							  <div class="cart-info">
+							  	<span class="spec">¥398.00/908g(2.0磅)</span>
+									<a href="#" class="add-cart">加入购物车</a>
+							  </div>
+							</li>
+				  	  <li>
+								<a href="#">
+									<img class="lazy" src="图片/s12.png" style="display: block;">
+								</a>
+							  <a href="#">
+									<h6>榴莲飘飘</h6>
+								</a>
+							  <a href="#">
+									<p>丰厚乳脂奶油，打入足量榴莲果肉</p>
+								</a>
+							  <div class="tag-list">
+							  	<a href="#">人气></a>
+									<a href="#">生日></a>
+							  </div> 
+							  <div class="cart-info">
+							  	<span class="spec">¥198.00/454g(1.0磅)</span>
+									<a href="#" class="add-cart">加入购物车</a>
+							  </div>
+							</li>
+						  <li>
+								<a href="#">
+									<img src="图片/s13.png" style="display: block;">
+								</a>
+							  <a href="#">
+									<h6> 黑白巧克力慕斯 彼尔德（HBD）</h6>
+								</a>
+							  <a href="#">
+									<p>卡通定制撒粉，简单、柔软</p>
+								</a>
+							  <div class="tag-list">
+							  	<a href="#">设计师></a>
+									<a href="#">新品></a>
+							  </div>
+							  <div class="cart-info">
+							  	<span class="spec">¥198.00/454g(1.0磅)</span>
+									<a href="#" class="add-cart">加入购物车</a>
+							  </div> 
+							</li>
+						  <li>
+								<a href="#">
+									<img src="图片/s14.png" style="display: block;">
+								</a>
+							  <a href="#">
+									<h6>枣儿</h6>
+								</a>
+							  <a href="#">
+									<p>红枣奶油戚风，与姜撞奶慕斯</p>
+								</a> 
+							  <div class="tag-list">
+							  	<a href="#">新品></a>
+									<a href="#">生日></a>
+							  </div> 
+							  <div class="cart-info">
+							  	<span class="spec">¥198.00/454g(1.0磅)</span>
+									<a href="#" class="add-cart">加入购物车</a>
+							  </div>
+							</li>
+						</ul>
+				  </div>
+				</div> 
+			</div>
+	      <div class="home-module home-colorful anchor" id="4">
+	      	<h4 class="home-module-title">
+						<h4 class="home-module-title">儿童
+						 <span>/</span>
+						 <span>专区</span>
+						</h4>
+					</h4>
+	        <div class="colorful-top-banner">
+	        	<a href="#">
+							<img src="图片/s15.jpg" style="display: inline">
+						</a>
+	        </div>
+				  <div class="color-product-list">
+						<div class="list-box">
+				  	<ul>
+				  		<li>
+								<a href="#">
+									<img class="lazy" src="图片/s13.png" style="display: block;">
+								</a>
+							  <a href="#">
+									<h6>黑白巧克力慕斯 彼尔德（Party）</h6>
+								</a>
+							  <a href="#">
+									<p>“ 孩子的世界，简单到非黑即白。”</p>
+								</a> 
+							  <div class="tag-list">
+							     <a href="#">儿童></a>
+									 <a href="#">新品></a>
+									 <a href="#">相识></a>
+							  </div>
+							  <div class="cart-info">
+							  	<span class="spec">¥198.00/454g(1.0磅)</span>
+									<a href="#" class="add-cart">加入购物车</a>
+							  </div> 
+							</li>
+				  	  <li>
+								<a href="#">
+									<img src="图片/s17.png" style="display: block;">
+								</a>
+							  <a href="#">
+									<h6>米道</h6>
+								</a>
+							  <a href="#">
+									<p>一款专为孩子设计的蛋糕</p>
+								</a> 
+							  <div class="tag-list">
+							  	<a href="#">儿童></a>
+									<a href="#">生日></a>
+									<a href="#">人气></a>
+							  </div>
+							  <div class="cart-info">
+							  	<span class="spec">¥298.00/454g(1.0磅)</span>
+									<a href="#" class="add-cart">加入购物车</a>
+							  </div> 
+							</li>
+						  <li>
+								<a href="#">
+									<img src="图片/s18.png" style="display: block;">
+								</a>
+							  <a href="#">
+									<h6>芒果奶油蛋糕</h6>
+								</a>
+							  <a href="#">
+									<p>21cake配方芒果百香果慕斯夹心</p>
+								</a>
+							  <div class="tag-list">
+							  	<a href="#">情侣></a>
+									<a href="#">儿童></a>
+									<a href="#">聚会></a>
+									<a href="#">人气></a>
+							  </div>
+							  <div class="cart-info">
+							  	<span class="spec">¥198.00/908g(2.0磅)</span>
+									<a href="#" class="add-cart">加入购物车</a>
+							  </div>
+							</li>
+						  <li>
+								<a href="#">
+									<img src="图片/s19.png" style="display: block;">
+								</a>
+							  <a href="#">
+									<h6>百香果酸乳酪慕斯（木糖醇）</h6>
+								</a>
+							  <a href="#">
+									<p>冰淇淋口感，不同层次的酸与冰凉</p>
+								</a>
+							  <div class="tag-list">
+							  	<a href="#">情侣></a>
+									<a href="#">低温></a>
+									<a href="#">新品></a>
+									<a href="#">儿童></a>
+							  </div>
+							  <div class="cart-info">
+							  	<span class="spec">¥198.00/454g(1.0磅)</span>
+									<a href="#" class="add-cart">加入购物车</a>
+							  </div> 
+							</li> 
+						</ul>
+				   </div>
+					</div>
+				</div>  
+	      <div class="home-module home-colorful anchor" id="5">
+	      	<h4 class="home-module-title">
+						聚会
+	         <span>/</span>
+					 <span>专区</span>
+					</h4>
+				  <div class="colorful-top-banner">
+				  	<a href="#">
+							<img src="图片/s20.jpg" style="display: inline">
+						</a>
+					</div> 
+				  <div class="color-product-list">
+				  	<div class="list-box">
+				  		<ul>
+				  			<li>
+									<a href="#">
+										<img src="图片/s21.png" style="display: block;">
+									</a>
+								  <a href="#">
+										<h6> 6口味切块</h6>
+									</a> 
+								  <a href="#">
+										<p>多口味，精装小份</p>
+									</a> 
+								  <div class="tag-list">
+								  	<a href="#">聚会></a>
+										<a href="#">新品></a>
+										<a href="#">含酒></a>
+										<a href="#">人气></a>
+								  </div>
+								  <div class="cart-info">
+								  	<span class="spec">¥/198.00/454g(1.0磅)</span>
+										<a href="#" class="add-cart">加入购物车</a>
+								  </div>
+								</li>
+				  		  <li>
+									<a href="#">
+										<img class="lazy" src="图片/s22.png" style="display: block;">
+									</a>
+								  <a href="#">
+										<h6>黑白巧克力慕斯</h6>
+									</a>
+								  <a href="#">
+										<p>白巧克力慕斯的甜，与黑巧克力酱的苦</p>
+									</a>
+								  <div class="tag-list">
+								  	<a href="#">含酒></a>
+										<a href="#">聚会></a>
+										<a href="#">生日></a>
+										<a href="#">人气></a>
+								  </div>
+								  <div class="cart-info">
+								  	<span class="spec">¥298.00/908g(2.0磅)</span>
+										<a href="#" class="add-cart">加入购物车</a>
+								  </div>
+								</li>
+							  <li>
+									<a href="#">
+										<img class="lazy" src="图片/s23.png" style="display: block">
+									</a>
+								  <a href="#">
+										<h6>朗姆芝士</h6>
+									</a>
+								  <a href="#">
+										<p>清香柠檬与乳酪夹心，微苦、微醺</p>
+									</a>
+								  <div class="tag-list">
+								  	<a href="#">含酒></a>
+										<a href="#">情侣></a>
+										<a href="#">生日></a>
+								  </div>
+								  <div class="cart-info">
+								  	<span class="spec">¥298.00/908g(2.0磅)</span>
+										<a href="#" class="add-cart">
+											加入购物车
+										</a>
+								  </div>
+								</li>
+							  <li>
+									<a href="#">
+										<img src="图片/s24.png" style="display:block">
+									</a>
+								  <a href="#">
+										<h6>冻慕斯与焗芝士</h6>
+									</a>
+								  <a href="#">
+										<p>马斯卡彭慕斯，叠加法国软芝士</p>
+									</a>
+								  <div class="tag-list">
+								  	<a href="#">情侣></a>
+										<a href="#">生日></a>
+								  </div>
+								  <div class="cart-info">
+								  	<span class="spec">¥198.00/454g(1.0磅)</span>
+										<a href="#" class="add-cart">加入购物车</a>
+								  </div> 
+								</li>
+							</ul>
+				  	</div>
+				  </div>
+	 </body>
+        <div class="home-module home-colorful anchor" id="6">
+        	<h4 class="home-module-title">
+						活动门
+						<span>/</span>
+						<span>是被吸引了吧</span>
+					</h4>
+         <ul class="home-s_activity-content">
+         	<li>
+						<a href="#">
+							<img src="图片/d1.jpg" style="display: block;">
+						</a>
+					</li>
+         </ul>
+				</div>  
+        <div class="home-module home-magazine anchor" id="7">
+        	<h4 class="home-module-title">廿一客
+					 <span>/</span>
+					 <span>文章</span>
+					 <a href="#" >查看更多&nbsp;&gt;</a>
+					</h4>
+          <ul class="home-magazine-content">
+          	<li>
+							<a href="#">
+								<img src="图片/d2.jpg" style="display: inline;">
+								<h4>冬季刊·进博会</h4>
+							
+						  <p>
+								<span></span>
+								<span>阅读全文 &gt;&gt;</span>
+							</p>
+							</a>
+						</li>
+            <li>
+							<a href="#">
+								<img src="图片/d3.jpg" style="display: inline;">
+								<h4>廿一志秋刊·客服Q&amp;A</h4>
+								<p>
+									<span></span>
+									<span>阅读全文 &gt;&gt;</span>
+								</p>
+							</a>
+						</li> 
+					</ul>	
+		</div>
+		</div>
+		<div class="footer">
+			<img class="footer-logo" src="图片/e1.png" height="36" width="96">
+			<div class="footer-nav">
+				<a href="#">联系我们</a>
+				<span>|</span>
+				<a href="#">订购帮助</a>
+				<span>|</span>
+				<a href="#">企业合作</a>
+				<span>|</span>
+				<a href="#">生产经营资质</a>
+				<span>|</span>
+				<a href="#">公告专区</a>
+			</div>
+		  <div class="footer-icon">
+		  	<a href="#"><img src="图片/e2.png" ></a>
+		    <a class="footer-weixin">
+					<div class="footer-erweima footer-app-erweima" style="display: none;">
+						<img src="图片/erweima.png" style="top: 100%">
+					</div>
+				  <img src="图片/weixin.png" >
+				</a>
+				<a class="footer-app" href="#"><img src="图片/QQ%20(1).png" ></a>
+			</div>
+		  <div class="footer-text">
+		  	<span>订购专线：400 650 2121（服务时间 08:00–22:00），企业团购热线：021-37768380</span>
+		    <span>客服电话：021-23099721（全国），kefu@21cake.com（邮箱）</span>
+			  杭州/广州：提前5小时预订；北京：提前6小时预订；上海：提前5.5-6小时预订；
+				天津/苏州/无锡/深圳：提前8小时预订（部分偏远地区除外，当日22点以后订单，
+				于次日8点开始审核）
+				</span>
+			  <span>当日蛋糕配送截止下单时间：北京/上海：16:30；
+				杭州/广州：14:00；天津：10:30；苏州/无锡/深圳：11:00
+				</span>
+			  <span>网站注册公司名称: 北京廿一客食品有限公司
+				地址: 北京市北京经济技术开发区兴海二街5号院3号楼
+				</span> 
+			  <span>
+			  			网站运营：廿一客（上海）电子商务有限公司 地址：上海市松江区新效支路518号<br>
+			  			上海廿一客食品有限公司分公司 地址：上海市松江区新效支路518号<br>
+			  			杭州廿一客食品有限公司 地址：杭州市滨江区秋溢路500号<br>
+			  			广州廿一客食品有限公司 地址：广州市南沙区东涌镇鱼窝头大道段   <br>   
+			  			北京廿一客食品有限公司 地址：北京市北京经济技术开发区兴海二街5号院<br>
+			  			深圳廿一客贸易有限公司 地址：深圳市福田区星河世纪大厦A栋1717  <br>       
+			  			天津廿一客食品有限公司 地址：天津市河西区麦收大厦2-2004<br>
+			  			广州廿一客食品贸易有限公司 地址：广州市南沙区东涌镇鱼窝头大道段  <br>
+			  			举实（上海）食品有限公司 地址：上海市松江区新效支路518号
+			  </span>
+			</div>
+		  <div class="footer-copyright">
+		  	<span>Copyright© 21Cake蛋糕官网商城 2007-2020, 版权所有
+		  			   <a style="color: #9a9a9a"  href="#">京ICP备14006254号-1</a>
+		  			   <a style="color: #9a9a9a"  href="#">京公网安备 11030102010682号</a>
+		  	</span>
+		  </div>
+		</div> 
+		</body>      
+</html> 

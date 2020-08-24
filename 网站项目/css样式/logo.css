@@ -1,0 +1,575 @@
+/* *{margin: 0;padding: 0;} */
+/* 设置body的最小宽度等等 */
+body {
+    min-width: 1200px;
+    overflow: auto;
+}
+/* 设置页面所有元素内外边距清零 */
+body, div, dl, dt, dd, ul, ol, 
+li, h1, h2, h3, h4, h5, h6, pre,
+code, form, fieldset, legend, 
+input, button, textarea, p, 
+blockquote, th, td {
+    margin: 0;
+    padding: 0;
+		}
+		/* 页面所有a标签鼠标悬停的颜色 */
+a:link{color: #684029;}
+a:hover{ color: red;}
+/* 设置页面所有样式的字体 */
+body {
+    font-family: 'PingFang SC','Heiti SC','微软雅黑',Helvetica,Arial;
+    font-size: 12px;
+    color: #684029;
+    overflow-x: hidden;
+		}
+/* 设置头"header-box" 高度*/
+.header-box{
+	height: 80px;
+	
+}
+/* 设置头"header" 的样式*/
+.header{
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 z-index: 1000000;
+	 width: 100%;
+	 height: 80px;
+	 background: #FFF;
+	 box-shadow: 0 2px 2px 0 rgba(195,195,195,0.50);
+}
+/* 设置头"header-nav" 的样式*/
+.header-nav {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 760px;
+    height: 80px;
+}
+/* 设置  logo  图片的样式 */
+.header .header-logo {
+    display: block;
+    float: left;
+    width: 120px;
+    height: 44px;
+    margin-top: 18px;
+}
+/* 设置页面所有a标签样式 */
+a:visited, a:link, a {
+    color: #684029;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+/*  */
+:link, :visited, ins {
+    text-decoration: none;
+}
+/* 设置img，a标签清除边框，内外边距 */
+img, a {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+/* 设置logo图片的宽度 */
+.header .header-logo img {
+    width: 100%;
+}
+/* 设置列表的样式 */
+.header .nav-box {
+    position: relative;
+    float: left;
+    line-height: 80px;
+    height: 80px;
+    margin-left: 30px;
+}
+/* 设置ol，ul去掉原点 */
+ol, ul {
+    list-style: none;
+}
+/* 设置header，有序列表的浮动，定位 */
+.header .nav-box li {
+    float: left;
+    margin: 0 15px;
+    font-size: 14px;
+    position: relative;
+}
+/*  */
+ul.nav-box a, ul.nav-box a:hover {
+    text-decoration: none !important;
+}
+/* 设置右边头的定位，浮动 */
+.header .right-city-user {
+    position: relative;
+    float: right;
+}
+/* 设置“ app下载 ” 的样式*/
+.header .header-app {
+    float: left;
+    font-size: 14px;
+    line-height: 80px;
+    margin-right: 20px;
+}
+/* 设置“城市” 的样式*/
+.header .current-city {
+    line-height: 80px;
+    float: left;
+    width: 84px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+/* 设置三角图标 */
+.header .current-city i>img{
+    background-position: 0 -59px;
+    background-size: 310px 120px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -4px;
+		padding-top: 0px;
+}
+/* 设置" 消息 "字体样式 */
+.right-city-user .header-message {
+    display: inline-block;
+    float: left;
+    width: 50px;
+    text-align: center;
+    height: 32px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    line-height: 32px;
+    font-size: 14px;
+    position: relative;
+}
+/* 设置" 登录/注册 "的样式 */
+.header .not-login {
+    float: left;
+    line-height: 80px;
+    font-size: 14px;
+    width: 80px;
+    text-align: center;
+}
+/* 设置“购物车图标”样式 */
+.header .header-cart {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 23px;
+}
+/* 设置购物车图标 */
+.header .header-cart a>img{
+    background-position: -286px -76px;
+    background-size: 310px 120px;
+    width: 18px;
+		height: 18px;
+    margin-top: 9px;	
+}
+/*  */
+.header .header-user, .header .header-cart {
+    float: left;
+    display: block;
+    height: 32px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+/* 原点样式 */
+.sliderli {
+    background: url(../图片/Oval.png) no-repeat;
+    border-radius: 50%;
+		}
+/* 设置第一排5张蛋糕图片的排版样式 */
+.home-menu {
+    width: 1124px;
+    margin: 26px auto 0;
+    overflow: hidden;
+    padding-top: 0;
+}
+/*  */
+.home-menu img {
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: #fafafa url(../图片/list-img.png) center no-repeat;
+    background-size: auto 100%;
+    opacity: 0.9;
+}
+/*  */
+.home-menu a {
+    display: block;
+    float: left;
+    margin: 6px 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.06);
+    overflow: hidden;
+}
+/* 光标 */
+.home-menu img:hover{opacity:1}
+/* 设置字体变细 */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+/* 设置图片样式 */
+.home-colorful .colorful-top-banner img {
+    width: 100%;
+    height: 100%;
+    background: #fafafa url(../图片/list-img%20(1).png) center no-repeat;
+    background-size: auto 100%;
+}
+/* 设置类名为“ .home-colorful .color-product-list ” 的div相对定位*/
+.home-colorful .color-product-list {
+    position: relative;
+}
+/* 设置类名为“  .home-colorful .color-product-list .list-box ” 的高度*/
+.home-colorful .color-product-list .list-box {
+    height: 365px;
+}
+/* 设置3小模块 大div的宽高，定位 */
+.home-colorful .list-box {
+    width: 1116px;
+    height: 320px;
+    overflow: hidden;
+    margin: 20px auto 0;
+    position: relative;
+}
+/* 设置3个模块的定位 */
+.home-colorful .list-box ul {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 有序列表清除圆点 */
+ol, ul {
+    list-style: none;
+}
+/* 设置模块1的定位 */
+.home-colorful .color-product-list .list-box li {
+    position: relative;
+    height: 365px;
+}
+/* 设置3个模块的浮动宽高，内外边距 */
+.home-colorful .list-box li {
+    float: left;
+    width: 263px;
+    height: 320px;
+    margin: 0 8px;
+}
+/* 设置3张图片的宽高,边距*/
+.home-colorful .list-box li img {
+    width: 263px;
+    height: 230px;
+     background: #fafafa url() center no-repeat; 
+    background-size: auto 100%;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+}
+/* 设置"蔓生 ......" 等字体的样式 */
+.home-colorful .list-box li h6 {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 22px;
+    color: #000;
+}
+/*  */
+.home-colorful .list-box li h6, .home-colorful .list-box li p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* 设置“ 树莓奶油与浆果慕斯蛋糕 ” 字体的样式 */
+.home-colorful .list-box li p {
+    font-size: 14px;
+    color: #616161;
+    line-height: 24px;
+}
+
+/* 设置“新品....” 字体的样式*/
+.home-colorful .list-box li .tag-list {
+    font-size: 0;
+    width: 263px;
+    height: 35px;
+    overflow: hidden;
+}
+/*  */
+.home-colorful .list-box li .tag-list a {
+    display: inline-block;
+    border: 1px solid #D5BFA7;
+    border-radius: 100px;
+    padding: 0 6px 0 8px;
+    color: #D5BFA7;
+    margin: 8px 3px;
+    font-size: 12px;
+}
+/* 设置198等等 字体，下划线，颜色*/
+.home-colorful .list-box li .cart-info {
+    border-top: 1px dashed #D5BFA7;
+    height: 37px;
+    color: #b0986f;
+    margin-top: 6px;
+    padding-top: 0px;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+}
+/* 设置“198..” 数字的样式*/
+.home-colorful .list-box li .spec {
+    display: block;
+    line-height: 14px;
+    color: #BB9772;
+    font-size: 14px;
+    position: absolute;
+    left: 0px;
+    bottom: 4px;
+    max-width: 165px;
+}
+/*  */
+.home-colorful .list-box li .add-cart {
+    display: block;
+    line-height: 20px;
+    font-size: 12px;
+    background: #643E28;
+    color: #fff;
+    padding: 0 10px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+/*  */
+.home-colorful .colorful-top-banner {
+    width: 1100px;
+    height: 250px;
+    margin: 0 auto;
+}
+/*  */
+.home-module-title {
+    font-size: 26px;
+    color: #724228;
+    line-height: 36px;
+    width: 1100px;
+    margin: 0 auto 20px;
+}
+/* 设置页面所有在位的上外边距 */
+ .home-colorful {
+    margin-top: 5px;
+}
+/* 设置页面所有在位的上内边距 */
+.home-module{
+	padding-top: 100px;
+}
+/* 设置"新品" 等页面所有标题的样式*/
+.home-module-title span {
+    font-size: 14px;
+    color: #8E5D43;
+    display: inline-block;
+    margin-left: -3px;
+}
+/*  */
+.home-s_activity-content {
+    width: 1116px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 6px 0;
+}
+/*  */
+.home-s_activity-content li {
+    float: left;
+    background: #fff;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.10);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 542px;
+    margin: 0 8px;
+}
+/* 设置底层2个div的样式 */
+.home-module:last-child {
+    margin-bottom: 100px;
+}
+/*  */
+.home-magazine {
+    padding-top: 60px;
+}
+/*  */
+.home-module {
+    padding-top: 50px;
+}
+/*  */
+.home-magazine .home-module-title a {
+    font-size: 13px;
+    color: #8E5D43;
+    float: right;
+}
+/* 设置底层2个图片的位置内边距 */
+.home-magazine-content {
+    width: 1116px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 6px 0;
+}
+/* 设置底层图片单个的样式 */
+.home-magazine-content li {
+    float: left;
+    background: #fff;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.10);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 542px;
+    height: 345px;
+    margin: 0 8px;
+}
+/* 设置 */
+.home-magazine-content li img {
+    width: 542px;
+    height: 252px;
+    background: #fafafa url() center no-repeat;
+    background-size: auto 100%;
+}
+/* 设置“ 冬季刊·进博会 ” 字体的样式*/
+.home-magazine-content li h4 {
+    font-size: 24px;
+    color: #000;
+    margin-top: 14px;
+    padding: 0 16px;
+}
+/* 设置" 阅读全文 "字体的样式 */
+.home-magazine-content li p {
+    font-size: 14px;
+    color: #242424;
+    padding: 0 16px;
+    line-height: 22px;
+}
+/*  */
+.home-magazine-content li p span:first-child {
+    display: inline-block;
+    width: 400px;
+    padding-right: 30px;
+    vertical-align: middle;
+}
+/*  */
+.home-magazine-content li h4, .home-magazine-content li p span:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*  */
+.home-magazine-content li p span:last-child {
+    color: #AD814B;
+    display: inline-block;
+}
+/* 设置页脚div的样式 */
+.footer {
+    background: #333;
+    padding: 50px 0 0 0;
+    position: relative;
+}
+/* 设置页脚logo图片的位置 */
+.footer-logo {
+    display: block;
+    margin: 0 auto;
+}
+/* 设置页脚4块字体的样式，位置 */
+.footer-nav {
+    text-align: center;
+    color: #fff;
+    margin: 25px 0;
+}
+/* 设置页脚a标签的样式 */
+.footer-nav a {
+    color: #fff;
+    display: inline-block;
+    margin: 0 50px;
+}
+/*  */
+.footer-nav {
+    text-align: center;
+    color: #fff;
+    margin: 25px 0;
+}
+/* 设置页脚3张图片的位置 */
+.footer-icon {
+    text-align: center;
+}
+/* 设置页脚3张图片a标签的样式 */
+.footer-icon a {
+    display: inline-block;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    background: #494949;
+    margin: 0 25px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+/* 设置页脚3张图片的大小 */
+.footer-icon a>img {
+    height: 30px;
+    margin: 10px;
+}
+/* 设置页脚文本样式 */
+.footer-text {
+    color: #9a9a9a;
+    text-align: center;
+    margin-top: 25px;
+    line-height: 18px;
+    font-size: 10px;
+}
+/*  */
+.footer-text span:first-child {
+    font-weight: bold;
+}
+/*  */
+.footer-text span {
+    display: block;
+}
+/* 设置页脚文本块级 */
+.footer-text span {
+    display: block;
+}
+/* 设置页脚版本样式 */
+.footer-copyright {
+    margin: 0 auto;
+    border-top: 1px solid #616161;
+    margin-top: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 10px;
+    padding-top: 12px;
+}
+/*  */
+.footer-copyright span {
+    color: #9a9a9a;
+    line-height: 1.5em;
+}
+/* 设置页脚微信图标光标 */
+.footer-weixin-erweima {
+    margin-left: -64px;
+}
+.footer-erweima {
+    position: absolute;
+    display: block;
+    height: 120px;
+    width: 120px;
+    left: 50%;
+    margin-left: 42px;
+    top: 15px;
+    overflow: hidden;
+    display: none;
+}
+.footer-erweima img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 10px solid #fff;
+}
+footer-icon a>img {
+    height: 30px;
+    margin: 10px;
+}
